@@ -32,18 +32,16 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="h-28 px-4 flex flex-col justify-center gap-1.5 max-w-lg mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-[#004328] flex items-center justify-center text-white">
-              <span className="material-symbols-outlined text-[18px]">storefront</span>
-            </div>
+            <img src="/src/img/logo1.png" className="h-[40px] w-[40px]" alt="" />
             <div className="flex flex-col relative">
               <span className="text-[10px] font-extrabold text-[#7d5800] uppercase tracking-wider">
                 Palengke Delivery
               </span>
               <button
                 onClick={() => setShowLocationDropdown(!showLocationDropdown)}
-                className="flex items-center gap-1 text-left group"
+                className="flex items-center gap-1 text-left group rounded-full shadow-sm px-2 py-1 hover:bg-[#e8f5e6]"
               >
-                <span className="text-[15px] font-bold text-[#161d18] line-clamp-1 group-hover:text-[#004328] transition-colors">
+                <span className="text-[13px] font-bold text-[#161d18] line-clamp-1 group-hover:text-[#004328] transition-colors">
                   {selectedLocation}
                 </span>
                 <span className="material-symbols-outlined text-[#004328] text-[18px]">
@@ -85,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               aria-label="View Suki Basket"
               onClick={onOpenCart}
-              className="relative w-10 h-10 rounded-full flex items-center justify-center text-[#404942] hover:text-[#161d18] hover:bg-[#e8f0e7] transition-colors"
+              className="relative w-10 h-10 rounded-full flex items-center justify-center text-[#404942] hover:text-[#161d18] hover:bg-[#e8f0e7] transition-colors rounded-full shadow-sm px-2 py-1 hover:bg-[#e8f5e6]"
             >
               <span className="material-symbols-outlined text-[22px]">shopping_bag</span>
               {cartCount > 0 && (
@@ -99,7 +97,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               aria-label="Notifications"
               onClick={() => setShowNotifications(!showNotifications)}
-              className="relative w-10 h-10 rounded-full flex items-center justify-center text-[#404942] hover:text-[#161d18] hover:bg-[#e8f0e7] transition-colors"
+              className="relative w-10 h-10 rounded-full flex items-center justify-center text-[#404942] hover:text-[#161d18] transition-colors rounded-full shadow-sm px-2 py-1 hover:bg-[#e8f5e6]"
             >
               <span className="material-symbols-outlined text-[22px]">notifications</span>
               <span className="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-[#9a2300] ring-2 ring-[#f3fcf2]"></span>
