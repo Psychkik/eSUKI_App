@@ -228,6 +228,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
         </div>
       </section>
           {/*Comment*/}
+          {/*Comment*/}
       {/* Featured Suki Live Stream Highlight Card */}
       <section className="px-4 flex flex-col space-y-2">
         <div className="flex items-center justify-between">
