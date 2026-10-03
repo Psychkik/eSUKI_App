@@ -13,7 +13,9 @@ interface CartModalProps {
     paymentMethod: 'COD' | 'GCash';
   }) => void;
 }
-
+/*meowk*/
+/*boset*/
+/*bayit*/
 export const CartModal: React.FC<CartModalProps> = ({
   isOpen,
   onClose,

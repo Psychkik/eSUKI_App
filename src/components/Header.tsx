@@ -34,9 +34,9 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-2">
             <img src="/src/img/logo1.png" className="h-[40px] w-[40px]" alt="" />
             <div className="flex flex-col relative">
-              <span className="text-[10px] font-extrabold text-[#7d5800] uppercase tracking-wider">
-                Palengke Delivery
-              </span>
+              {/* <span className="text-[10px] font-extrabold text-[#7d5800] tracking-wider">
+                
+              </span> */}
               <button
                 onClick={() => setShowLocationDropdown(!showLocationDropdown)}
                 className="flex items-center gap-1 text-left group rounded-full shadow-sm px-2 py-1 hover:bg-[#e8f5e6]"
