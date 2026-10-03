@@ -87,7 +87,7 @@ export const SukiListahanScreen: React.FC<SukiListahanScreenProps> = ({
           <div className="relative z-10 grid grid-cols-2 gap-2 pt-1 border-t border-white/10 text-[12px]">
             <div className="bg-black/20 p-2 rounded-xl">
               <span className="text-[10px] text-[#8ed6aa] uppercase block font-bold">
-                Total Loyal Suki
+                Total Suki
               </span>
               <span className="text-[16px] font-extrabold text-white">
                 {sukiCustomers.length} Customers
@@ -95,7 +95,7 @@ export const SukiListahanScreen: React.FC<SukiListahanScreenProps> = ({
             </div>
             <div className="bg-black/20 p-2 rounded-xl">
               <span className="text-[10px] text-[#ffb09b] uppercase block font-bold">
-                Trust Credit (Listahan)
+                Trust Credit
               </span>
               <span className="text-[16px] font-extrabold text-[#febb2d]">
                 ₱{totalOutstanding}
@@ -161,7 +161,7 @@ export const SukiListahanScreen: React.FC<SukiListahanScreenProps> = ({
 
               <div className="text-right">
                 <span className="text-[10px] text-[#707971] uppercase block font-bold">
-                  Kredito / Utang
+                  Credit / Utang
                 </span>
                 <span
                   className={`text-[14px] font-extrabold ${
@@ -172,7 +172,7 @@ export const SukiListahanScreen: React.FC<SukiListahanScreenProps> = ({
                 >
                   {customer.outstandingBalance > 0
                     ? `₱${customer.outstandingBalance}`
-                    : 'Clear (₱0)'}
+                    : '₱0'}
                 </span>
               </div>
             </div>
@@ -216,7 +216,7 @@ export const SukiListahanScreen: React.FC<SukiListahanScreenProps> = ({
                   }}
                   className="px-2.5 py-1 bg-[#226b47] text-white font-bold rounded-lg active:scale-95 transition-all shadow-xs"
                 >
-                  Bayad Kredito
+                  Pay Credit
                 </button>
               ) : (
                 <button
